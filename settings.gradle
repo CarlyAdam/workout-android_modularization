@@ -8,3 +8,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "workout"
 include ':app'
+include ':core'
+include ':notifications'
+include ':notifications:notifications_data'
+include ':notifications:notifications_data_source'
+include ':notifications:notifications_domain'
+include ':notifications:notifications_interactors'
+include ':notifications:notifications_presentation'

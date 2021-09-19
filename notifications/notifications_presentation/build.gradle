@@ -1,0 +1,13 @@
+apply {
+    from("$rootDir/android-library-build.gradle")
+}
+
+dependencies {
+    "implementation"(project(Modules.core))
+    "implementation"(project(Modules.notifications_domain))
+    "implementation"(project(Modules.notifications_data))
+    "implementation"(project(Modules.notifications_data_source))
+    "implementation"(project(Modules.notifications_interactors))
+
+
+}

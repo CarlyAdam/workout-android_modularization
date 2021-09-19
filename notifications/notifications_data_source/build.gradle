@@ -1,0 +1,20 @@
+apply {
+    from("$rootDir/library-build.gradle")
+}
+
+dependencies {
+    //retrofit
+    implementation Network.retrofit
+    implementation Network.okhttp
+    implementation Network.gson
+    implementation Network.converter_gson
+    implementation Network.loading
+
+    //Kotlin Coroutines
+    implementation Coroutines.android
+    implementation Coroutines.core
+
+    "implementation"(project(Modules.core))
+    "implementation"(project(Modules.notifications_domain))
+
+}

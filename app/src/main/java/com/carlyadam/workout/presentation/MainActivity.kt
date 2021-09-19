@@ -16,13 +16,14 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.lifecycleScope
-import com.carlyadam.workout.domain.NotificationData
-import com.carlyadam.workout.presentation.notifications.NotificationsViewModel
+import com.carlyadam.notifications_domain.NotificationData
+import com.carlyadam.notifications_presentation.notifications.NotificationsViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
-import androidx.compose.material.MaterialTheme
 
 @AndroidEntryPoint
+@ExperimentalCoroutinesApi
 class MainActivity : AppCompatActivity() {
 
     private val postViewModel: NotificationsViewModel by viewModels()
@@ -74,7 +75,7 @@ fun showPosts(postList: List<NotificationData>) {
 
 @Composable
 fun showError(error: String) {
-    Log.i("REEEEES",error)
+    Log.i("REEEEES", error)
     //Toast.makeText(context, error, Toast.LENGTH_SHORT).show()
 }
 

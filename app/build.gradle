@@ -78,12 +78,15 @@ dependencies {
 
     //hilt
     implementation Hilt.android
+    kapt Hilt.compiler
+
+    //compose
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
-    kapt Hilt.compiler
+
 
     //compose
     implementation Compose.activity
@@ -93,6 +96,8 @@ dependencies {
     implementation Compose.navigation
     implementation Compose.livedata
 
-    //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    "implementation"(project(Modules.notifications_domain))
+    "implementation"(project(Modules.notifications_presentation))
+    "implementation"(project(Modules.notifications_data_source))
 
 }
