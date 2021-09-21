@@ -6,7 +6,7 @@ import java.util.*
 object Constant {
 
     val API_URL = "https://devapi.vivecar.mx/"
-    val TOKEN_API = "Token 7e29058c09bc4b6d88681993a2ff552fb0c8bdf9"
+    val TOKEN_API = "Token 1f462e401ba91e7f1f27f8f5b0eff446024da59c"
 
     fun formatDate(
         fecha: String,

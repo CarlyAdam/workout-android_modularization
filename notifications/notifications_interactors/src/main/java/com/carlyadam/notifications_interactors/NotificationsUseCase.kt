@@ -27,6 +27,7 @@ class NotificationsUseCase(
     @ExperimentalCoroutinesApi
     suspend fun getNotifications(): Flow<Result<List<NotificationData>>> = flow {
         val response = notificationDataSource.getAllNotifications()
+        print(response.toString())
         if (response.isSuccessful) {
             emit(Result.Success(response.body()!!.results))
         } else {

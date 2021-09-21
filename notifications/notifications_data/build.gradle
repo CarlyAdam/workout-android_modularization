@@ -5,7 +5,6 @@ apply {
 
 dependencies {
 
-    implementation Network.retrofit
     "implementation"(project(Modules.core))
     "implementation"(project(Modules.notifications_domain))
     "implementation"(project(Modules.notifications_data_source))

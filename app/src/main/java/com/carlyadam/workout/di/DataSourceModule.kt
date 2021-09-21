@@ -1,4 +1,4 @@
-package com.carlyadam.notifications_presentation.di
+package com.carlyadam.workout.di
 
 import com.carlyadam.notifications_data.implementation.NotificationDataSourceImpl
 import com.carlyadam.notifications_data_source.ApiService

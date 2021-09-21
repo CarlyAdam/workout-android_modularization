@@ -1,4 +1,4 @@
-package com.carlyadam.notifications_presentation.di
+package com.carlyadam.workout.di
 
 import android.content.Context
 import com.carlyadam.core.Constant.API_URL

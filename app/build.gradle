@@ -99,5 +99,8 @@ dependencies {
     "implementation"(project(Modules.notifications_domain))
     "implementation"(project(Modules.notifications_presentation))
     "implementation"(project(Modules.notifications_data_source))
+    "implementation"(project(Modules.notifications_data))
+    "implementation"(project(Modules.notifications_interactors))
+    "implementation"(project(Modules.core))
 
 }
